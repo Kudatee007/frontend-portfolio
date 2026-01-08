@@ -1,4 +1,3 @@
-import React from 'react'
 import About from '../features/about/About'
 import Project from '../features/projects/Project'
 import Experience from '../features/experience/Experience'
