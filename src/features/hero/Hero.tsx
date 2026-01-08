@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
           </Reveal>
 
           <Reveal>
-            <p className="text-xl sm:text-2xl text-white/70 font-light mb-8 sm:mb-10 max-w-2xl">
+            <p className="text-xl sm:text-2xl text-white/70 font-light mb-8 sm:mb-10 max-w-2xl font-poppins">
               I build responsive and accessible web applications with a strong
               focus on clarity, performance, and maintainable frontend
               architecture.

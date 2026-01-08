@@ -25,12 +25,21 @@ const About: React.FC = () => {
   return (
     <section
       id="About"
-      className="relative py-20 sm:py-24 lg:py-32 px-5 sm:px-10 lg:px-20 bg-background"
+      className="relative py-20 sm:py-24 lg:py-32 px-5 sm:px-10 lg:px-20 bg-slate-950"
     >
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-10"></div>
+
+      {/* Gradient orbs */}
+      <div className="absolute top-1/4 left-1/4 w-48 h-44 sm:w-96 sm:h-96 bg-emerald-500/10 rounded-full blur-[120px] animate-pulse"></div>
+      <div
+        className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-[120px] animate-pulse"
+        style={{ animationDelay: "1s" }}
+      ></div>
       <div className="max-w-[1400px] mx-auto">
         {/* Section Header */}
         <div className="flex items-center gap-4 sm:gap-6 mb-12 sm:mb-16">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white whitespace-nowrap">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white whitespace-nowrap font-archivo">
             About<span className="text-emerald-400">.</span>
           </h2>
           <div className="flex-1 h-[2px] bg-gradient-to-r from-slate-600 to-transparent opacity-30"></div>
@@ -41,7 +50,7 @@ const About: React.FC = () => {
           {/* About Text */}
           <div className="lg:col-span-2 space-y-6 text-slate-300 text-lg sm:text-xl leading-relaxed font-light tracking-wide">
             <p>
-              <span className="float-left text-5xl sm:text-6xl font-bold text-white bg-slate-800 p-4 flex items-center justify-center mr-4 mb-2">
+              <span className="float-left text-xl sm:text-6xl font-bold text-white bg-slate-800 px-2 py-6 flex items-center justify-center mr-2">
                 I'm
               </span>
               a frontend engineer with a background in finance, bringing a

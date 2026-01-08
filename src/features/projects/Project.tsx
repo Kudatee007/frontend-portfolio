@@ -94,15 +94,24 @@ const Project: React.FC = () => {
   return (
     <section
       id="Project"
-      className="relative py-20 sm:py-24 lg:py-32 px-5 sm:px-10 lg:px-20 bg-background"
+      className="relative py-20 sm:py-24 lg:py-32 px-5 sm:px-10 lg:px-20 bg-slate-950"
     >
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-10"></div>
+
+      {/* Gradient orbs */}
+      <div className="absolute top-1/4 left-1/4 w-44 h-44 sm:w-96 sm:h-96 bg-emerald-500/10 rounded-full blur-[120px] animate-pulse"></div>
+      <div
+        className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-[120px] animate-pulse"
+        style={{ animationDelay: "1s" }}
+      ></div>
       <div className="max-w-[1400px] mx-auto">
         {/* Section Header */}
         <div className="flex items-center gap-4 sm:gap-6 mb-12 sm:mb-16">
           <div className="flex-1 h-[2px] bg-gradient-to-l from-slate-600 to-transparent opacity-30"></div>
-          {/* <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white whitespace-nowrap">
-            Selected Projects<span className="text-emerald-400">.</span>
-          </h2> */}
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white whitespace-nowrap font-archivo">
+            Projects<span className="text-emerald-400">.</span>
+          </h2>
         </div>
 
         {/* Projects Grid */}
@@ -135,7 +144,7 @@ const Project: React.FC = () => {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 bg-white rounded-full hover:bg-emerald-400 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-emerald-500/50"
+                        className="p-2 text-xl text-accent rounded-full hover:text-white transition-all duration-300"
                       >
                         <TbBrandGithubFilled />
                       </a>
@@ -145,7 +154,7 @@ const Project: React.FC = () => {
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 bg-white rounded-full hover:bg-emerald-400 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-emerald-500/50"
+                        className="p-2 text-xl text-accent rounded-full hover:text-white transition-all duration-300"
                       >
                         <LuExternalLink />
                       </a>
@@ -246,8 +255,8 @@ const Project: React.FC = () => {
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 group"
                       >
-                        <div className="p-2 bg-white rounded-full group-hover:bg-emerald-400 transition-all duration-300 group-hover:scale-110">
-                          <TbBrandGithubFilled/>
+                        <div className="p-2 bg-white text-xl text-slate-950 rounded-full group-hover:bg-emerald-400 transition-all duration-300 group-hover:scale-110">
+                          <TbBrandGithubFilled />
                         </div>
                         <span className="text-emerald-400 font-poppins font-semibold group-hover:text-emerald-300 transition-colors">
                           Source Code
@@ -260,8 +269,7 @@ const Project: React.FC = () => {
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 group"
                       >
-                        <div className="p-2 bg-white rounded-full group-hover:bg-emerald-400 transition-all duration-300 group-hover:scale-110">
-                          {/* <LuExternalLink className="text-xl text-slate-950" /> */}
+                        <div className="p-2 bg-white text-xl text-slate-950 rounded-full group-hover:bg-emerald-400 transition-all duration-300 group-hover:scale-110">
                           <LuExternalLink />
                         </div>
                         <span className="text-emerald-400 font-poppins font-semibold group-hover:text-emerald-300 transition-colors">
