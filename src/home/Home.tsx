@@ -5,11 +5,11 @@ import Experience from '../features/experience/Experience'
 
 const Home = () => {
   return (
-    <div className='pl-16 xl:px-20'>
+    <main className='pl-16 xl:px-20'>
         <About />
         <Project />
         <Experience />
-    </div>
+    </main>
   )
 }
 

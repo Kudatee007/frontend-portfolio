@@ -13,7 +13,7 @@ const experiences: ExperienceItem[] = [
   {
     company: "Risevest Academy",
     role: "Frontend Engineering Program",
-    period: "2023 – 2024",
+    period: "Jan 2025 – Dec 2025",
     description: [
       "Completed an intensive, project-based frontend engineering program focused on building production-ready web applications.",
       "Worked extensively with modern frontend frameworks and tooling, applying best practices in component architecture, state management, and API integration.",

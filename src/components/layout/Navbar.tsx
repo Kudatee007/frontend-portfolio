@@ -163,7 +163,7 @@ const Navbar: React.FC = () => {
           rel="noopener noreferrer"
           className="group relative"
         >
-          <div className="p-1.5 bg-white rounded-sm hover:bg-emerald-400 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/50">
+          <div className="p-1.5 bg-white text-accent rounded-sm hover:bg-emerald-400 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/50">
             <FaLinkedinIn />
           </div>
         </a>
@@ -174,7 +174,7 @@ const Navbar: React.FC = () => {
           rel="noopener noreferrer"
           className="group relative"
         >
-          <div className="p-1.5 bg-white rounded-full hover:bg-emerald-400 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/50">
+          <div className="p-1.5 bg-white text-background rounded-full hover:bg-emerald-400 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/50">
             <TbBrandGithubFilled />
           </div>
         </a>
@@ -185,7 +185,7 @@ const Navbar: React.FC = () => {
           rel="noopener noreferrer"
           className="group relative"
         >
-          <div className="p-1.5 bg-white rounded-full hover:bg-emerald-400 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/50">
+          <div className="p-1.5 bg-white text-accent rounded-full hover:bg-emerald-400 transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/50">
             {/* <FaTwitter className="text-xl text-slate-950" /> */}
             <FaTwitter />
           </div>
